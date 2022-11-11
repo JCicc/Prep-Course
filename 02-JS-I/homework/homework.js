@@ -96,7 +96,7 @@ function mayorQueCincuenta(num) {
   if (num > 50) {
     return true;
   }
-  return false,
+  return false;
 }
 
 function obtenerResto(x, y) {
