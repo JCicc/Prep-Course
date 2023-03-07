@@ -27,7 +27,7 @@ function incrementarPorUno(array) {
   // y devuelve el array
   // Tu código:
   var arraymodificado = [];
-  for (var i = 0 ; i < arraylength; i++){
+  for (var i = 0 ; i < array.length; i++){
     arraymodificado.push(array[i]+1);
     }
     return arraymodificado; 
@@ -59,7 +59,7 @@ function dePalabrasAFrase(palabras) {
   // con espacios entre cada palabra
   // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'
   // Tu código:
-  return palabras.joinI(' ');
+  return palabras.join(' ');
 }
 
 
@@ -88,10 +88,10 @@ function promedioResultadosTest(resultadosTest) {
   // Itera (en un bucle) los elementos del array, calcula y devuelve el promedio de puntajes
   // Tu código:
   var promedio = 0;
-  for(var i = 0; i<resultadosTest.length;i++){
-    suma = suma + resultadosTest[i];
+  for(var i = 0; i < resultadosTest.length;i++){
+    promedio = promedio + resultadosTest[i];
   }
-  return suma / resultadosTest.length ;
+  return promedio / resultadosTest.length ;
 }
 
 
@@ -146,7 +146,7 @@ function diaDeLaSemana(numeroDeDia) {
   if (numeroDeDia === 1 || numeroDeDia === 7){
     return 'Es fin de semana';
   }
-  return 'Es dia laboral';
+  return 'Es dia Laboral';
 } 
 
 

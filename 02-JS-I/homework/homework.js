@@ -28,7 +28,7 @@ const nuevoModulo = 21 % 5 === 1;
 function devolverString(str) {
   // "Return" la string provista: str
   // Tu código:
-  let string = 'Henry';
+  return str;
 }
 
 function suma(x, y) {
@@ -109,20 +109,14 @@ function esPar(num) {
   // Devuelve "true" si "num" es par
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (num/2 == 0) {
-    return true;
-  }
-  return false;
+ return num % 2 === 0; 
 }
 
 function esImpar(num) {
   // Devuelve "true" si "num" es impar
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (num/2 !== 0) {
-    return true;
-  }
-  return false;
+  return num % 2 !== 0;
 }
 
 function elevarAlCuadrado(num) {
@@ -190,14 +184,14 @@ function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
-  return ('nombre' + 'apellido')
+  return (nombre) +(' ') + (apellido);
 }
 
 function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
-  return ('Hola' + nombre + '!');
+  return 'Hola ' + nombre + '!';
 }
 
 function obtenerAreaRectangulo(alto, ancho) {
@@ -225,7 +219,7 @@ function deEuroAdolar(euro){
   //Supongamos que 1 euro equivale a 1.20 dólares. Escribe un programa que reciba
   //como parámetro un número de euros y calcule el cambio en dólares.
   //Escribe tu código aquí
-  return (euro * 1.20) + ' Dolarés';
+  return (euro * 1.20);
 
 }
 

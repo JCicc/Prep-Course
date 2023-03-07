@@ -34,10 +34,10 @@ function conection(status) {
   //Cuando el estado es igual a 2, el usuario está "Away"
   //De lo contrario, presumimos que el usuario está "Offline"
   //Devolver el estado de conexión de usuario en cada uno de los casos.
-  if (status = 1){
+  if (status == 1){
     return "Online";
   }
-  else if (status = 2){
+  else if (status == 2){
     return "Away";
   }
   else {
@@ -78,7 +78,7 @@ function colors(color) {
     case "blue":
       return "This is blue";
       break;
-    case "Red":
+    case "red":
       return "This is red";
       break;
     case "green":
@@ -161,10 +161,10 @@ function operadoresLogicos(num1, num2, num3) {
   else if (num1 < 0 || num2 < 0 || num3 < 0) {
     return "Hay negativos";
   }
-  else if (num1 < num3 > num2){
-    return (num3 +1);
+  else if (num3 > num1 && num3 > num2){
+    return num3 + 1;
   }
-  else if (num2 < num1 > num3) {
+  else if (num1 > num2 && num1 > num3) {
     return "Número 1 es mayor y positivo";
   }
   else {
